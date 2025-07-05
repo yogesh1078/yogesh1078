@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .demo-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .demo-section:nth-child(odd) {
+            background: #f9fafb;
+        }
+        
+        .demo-section:nth-child(even) {
+            background: white;
+        }
+        
+        .demo-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .demo-content p {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .feature-highlight {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ProDigy</a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demo1" class="nav-link">Demo 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demo2" class="nav-link">Demo 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demo3" class="nav-link">Demo 3</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Sections -->
+    <section id="demo1" class="demo-section">
+        <div class="demo-content">
+            <h2>Navigation Demo</h2>
+            <p>
+                This page demonstrates the interactive navigation menu in action. 
+                Notice how the navigation bar changes appearance as you scroll down this page.
+            </p>
+            <div class="feature-highlight">
+                ✓ Fixed Position - Navigation stays visible when scrolling
+            </div>
+        </div>
+    </section>
+
+    <section id="demo2" class="demo-section">
+        <div class="demo-content">
+            <h2>Scroll Effects</h2>
+            <p>
+                As you scroll through different sections, observe how the navigation background 
+                becomes more opaque and gains a subtle shadow for better visibility and depth.
+            </p>
+            <div class="feature-highlight">
+                ✓ Background Changes - Transparent to solid on scroll
+            </div>
+        </div>
+    </section>
+
+    <section id="demo3" class="demo-section">
+        <div class="demo-content">
+            <h2>Interactive Features</h2>
+            <p>
+                Hover over the navigation menu items to see the smooth hover effects. 
+                On mobile devices, tap the hamburger menu to see the responsive mobile navigation.
+            </p>
+            <div class="feature-highlight">
+                ✓ Hover Effects - Menu items change color and style on hover
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="demo-content">
+            <h2>Mobile Responsive</h2>
+            <p>
+                The navigation automatically adapts to different screen sizes. 
+                On smaller screens, it transforms into a hamburger menu for optimal mobile experience.
+            </p>
+            <div class="feature-highlight">
+                ✓ Fully Responsive - Works across all device sizes
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="demo-content">
+            <h2>Smooth Transitions</h2>
+            <p>
+                All navigation interactions feature smooth CSS transitions and animations 
+                for a polished, professional user experience.
+            </p>
+            <div class="feature-highlight">
+                ✓ Smooth Animations - Professional transitions between states
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="demo-content">
+            <h2>Cross-Page Navigation</h2>
+            <p>
+                The navigation menu appears consistently across all pages of the website, 
+                providing seamless navigation throughout the entire site.
+            </p>
+            <div class="feature-highlight">
+                ✓ Multi-Page Support - Visible on all pages
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ProDigy Infotech - Navigation Demo</h3>
+                    <p>This demo showcases all the interactive navigation features implemented for the responsive landing page.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Features Demonstrated</h4>
+                    <ul>
+                        <li>Fixed position navigation</li>
+                        <li>Scroll-based style changes</li>
+                        <li>Hover effects</li>
+                        <li>Mobile hamburger menu</li>
+                        <li>Smooth transitions</li>
+                        <li>Responsive design</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="about.html">About Page</a></li>
+                        <li><a href="demo.html">This Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technical Details</h4>
+                    <p>Built with HTML5, CSS3, and vanilla JavaScript</p>
+                    <p>Fully responsive and accessible</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ProDigy Infotech. All rights reserved. | Task-01: Responsive Landing Page</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
